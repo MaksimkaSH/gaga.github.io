@@ -1,0 +1,177 @@
+header, main, footer{
+	margin: 0 auto;
+	background: rgb(240, 248, 255, 0.7);
+	min-height: 100px;
+	max-width: 1000px;
+}
+
+main{
+	min-width: 450px;
+	min-height: 450px;
+	
+}
+
+header {
+	min-width: 1000px;
+	min-height: 200px;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: center;	
+}
+
+body {
+	background-image: url(../img/da.png);
+	background-size: cover;
+	min-height: 100vh;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+}
+
+footer{
+	min-width: 1000px;
+	display: flex;
+	align-items: center;
+	justify-content: center;	
+}
+
+.h1-style{
+	flex-grow: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;	
+}
+
+.product-sth {
+	display: block;
+	width: 50%;
+	
+}
+
+.product {
+	display: block;
+	border: 1px solid Gainsboro;
+	position: relative;
+	background: Snow;
+	margin: 0 20px 20px 0;
+	color: #474747;
+	height: 300px;	
+}
+
+.product h3, h4 {
+	display: flex;
+	align-items: center;
+	justify-content: center;	
+}
+
+.products_all{
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+
+.new_products {
+	display: block;
+	width: 44.634146%;
+}
+
+.open-popup {
+	display: inline-block;
+	background: Snow;
+	border: 2px solid Gainsboro;
+	text-decoration: none;
+	color: #858383;
+	padding: 15px 30px;	
+}
+
+.popup_bg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	opacity: 0;
+	pointer-events: none;
+}
+
+.popup_bg.active {
+	opacity: 1;
+	pointer-events: all;
+}
+
+.popup {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #fff;
+	width: 400px;
+	padding: 25px;	
+}
+
+.close-popup {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+	width: 20px;
+}
+
+.popup_label {
+	width: 100%;
+	margin-bottom: 25px;
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+.popup .label_text {
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+
+.popup input {
+	height: 45px;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid;
+}
+
+.popup input:focus  {
+	border-bottom: 1px solid #2982ff;
+}
+
+.popup input:focus + .label_text {	
+	color: #2982ff;
+}
+
+.popup button {
+	width: 100%;
+	height: 45px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	font-size: 18px;
+	background: #2982ff;
+	border: 2px solid #2982ff;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+.popup button:hover {
+    background: #fff;
+    color:#2982ff;
+}
+
+.test-class {
+	background: lightgreen;
+}
+
+.imgs {
+	width: 183px;
+}
