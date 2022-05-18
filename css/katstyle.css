@@ -7,6 +7,7 @@ header, main, footer{
 
 main{
 	min-width: 450px;
+	max-width: 450px;
 	min-height: 450px;
 	
 }
@@ -45,7 +46,7 @@ footer{
 
 .product-sth {
 	display: block;
-	width: 50%;
+	width: 205px;
 	
 }
 
@@ -65,15 +66,17 @@ footer{
 	justify-content: center;	
 }
 
+
 .products_all{
 	display: flex;
 	flex-wrap: wrap;
+	padding-inline-start: 30px;
 	
 }
 
 .new_products {
 	display: block;
-	width: 44.634146%;
+	width: 183px;
 }
 
 .open-popup {
@@ -83,7 +86,10 @@ footer{
 	text-decoration: none;
 	color: #858383;
 	padding: 15px 30px;	
+	cursor: pointer;
 }
+
+
 
 .popup_bg {
 	position: fixed;
@@ -172,6 +178,7 @@ footer{
 	background: lightgreen;
 }
 
-.imgs {
+.product img{
 	width: 183px;
 }
+

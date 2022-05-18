@@ -9,7 +9,7 @@ header, main, footer{
 main{
 	min-width: 450px;
 	min-height: 450px;
-	
+	max-width: 450px;
 	
 }
 

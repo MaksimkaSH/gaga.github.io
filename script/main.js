@@ -48,7 +48,8 @@ function addElement() {
 	const parentC = document.getElementById('parent');
 	product.name = document.getElementById('name').value;
 	product.price = document.getElementById('price').value;
-	product.img = document.getElementById('img').value;
+	
+	product.img = "img/" + document.getElementById('img').files[0].name;
 	
 	if (parentC && product.name && product.price) {
 		const newEl1 = document.createElement('li');
@@ -59,6 +60,7 @@ function addElement() {
 		const new_id = document.getElementById('newId'+i);
 		const newEl2 = document.createElement('img');
 		newEl2.src = product.img;
+		//newEl2 = new Blob([product.img], {image/jpg});
 		newEl2.classList.add('imgs');
 		new_id.appendChild(newEl2);
 		const newEl3 = document.createElement('h3');
@@ -68,8 +70,13 @@ function addElement() {
 		const newEl4 = document.createElement('h4');
 		newEl4.innerHTML = '$' + product.price;
 		new_id.appendChild(newEl4);
+		
+		const newEl5 = document.createElement('button');
+		newEl5.onclick = deleteEl();
+		
+		newEl5.innerHTML = "Удалить";
+		newEl5.classList.add('open-popup');
+		new_id.appendChild(newEl5);
 	}
-	i++;
-	
-	
+	i++;	
 }
