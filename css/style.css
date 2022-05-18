@@ -20,18 +20,33 @@ main{
 	justify-content: center;
 	
 }
-.img-style {
+
+.main-menu {
 	display: flex;
-	flex-flow: column nowrap;
-	justify-content: space-between;
+	flex-wrap: wrap;
+	padding-inline-start: 30px;
 	
 }
-.img-style nav{
+
+.text_underline {
+	text-decoration: none;
+}
+.menu-element {
+	display: block;
+    border: 1px solid #a9c3c3;;
+    position: relative;
+    background: #faffff;
+    margin: 0 20px 20px 0;
+    color: #474747;
+    height: 250px;
+    width: 183px;
+}
+
+.element-name h3 {
+	
 	display: flex;
-	margin: 20px;
-	justify-content: space-between;
-	
-	
+	align-items: center;
+	justify-content: center;	
 }
 
 header {

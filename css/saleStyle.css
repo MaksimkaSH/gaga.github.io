@@ -1,0 +1,66 @@
+header, main, footer{
+	margin: 0 auto;
+	background: rgb(240, 248, 255, 0.7);
+	min-height: 100px;
+	max-width: 1000px;
+}
+
+main{
+	min-width: 450px;
+	max-width: 450px;
+	min-height: 450px;
+	
+}
+
+header {
+	min-width: 1000px;
+	min-height: 200px;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: center;	
+}
+
+body {
+	background-image: url(../img/da.png);
+	background-size: cover;
+	min-height: 100vh;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+}
+
+footer{
+	min-width: 1000px;
+	display: flex;
+	align-items: center;
+	justify-content: center;	
+}
+
+.all_sales {
+	padding-inline-start: 0px;
+}
+
+.sale {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.image {
+	width: 350px;
+	border: 1px solid #a9c3c3;
+	
+}
+
+.sale h1 {
+	text-align: center;
+	color: rgb(55 99 152);
+}
+
+.h1-style{
+	flex-grow: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;	
+}
